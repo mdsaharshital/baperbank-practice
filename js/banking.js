@@ -5,12 +5,13 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const depositAmount = parseFloat(depositInput.value);
     // add money to deposit section
     const currentDeposit = document.getElementById('deposit-amount');
-    currentDeposit.innerHTML = parseFloat(currentDeposit.innerHTML)+ depositAmount;
+    currentDeposit.innerText = parseFloat(currentDeposit.innerText)+ depositAmount;
     // add money to deposit section
     const currentBalance = document.getElementById('balance-amount');
-    currentBalance.innerHTML = parseFloat(currentBalance.innerHTML)+ parseFloat(depositAmount);
+    currentBalance.innerText = parseFloat(currentBalance.innerText)+ parseFloat(depositAmount);
     // clear input field
     depositInput.value = '';
+    
 })
 
 //withdraw handle
@@ -24,7 +25,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
     currentWithdraw.innerText = parseFloat(currentWithdraw.innerText) + withdrawAmount;
     // decrease money from total balance
     const currentBalance = document.getElementById('balance-amount');
-    currentBalance.innerHTML = parseFloat(currentBalance.innerHTML)- withdrawAmount;
+    currentBalance.innerText = parseFloat(currentBalance.innerText)- withdrawAmount;
     // clear input field
     withdrawInput.value = '';
 })
