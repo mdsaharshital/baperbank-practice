@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking Site</title>
+    <!-- tailwind-css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-3xl mt-5">Hello User to our Banking</h1>
+      <h1 class="text-center text-5xl mt-5">
+        Let's Get Calculate Some
+        <span class="font-bold text-blue-500">Money</span>
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+      <section class="my-8">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-4">
+          <div class="bg-blue-300 p-8 rounded">
+            <h1 class="text-3xl text-white">Deposit</h1>
+            <h1 class="text-5xl text-white">
+              $<span id="deposit-amount">00</span>
+            </h1>
+          </div>
+          <div class="bg-green-300 p-8 rounded">
+            <h1 class="text-3xl text-white">Withdraw</h1>
+            <h1 class="text-5xl text-white">
+              $<span id="withdraw-amount">00</span>
+            </h1>
+          </div>
+          <div class="bg-yellow-300 p-8 rounded">
+            <h1 class="text-3xl text-white">Balance</h1>
+            <h1 class="text-5xl text-white">
+              $<span id="balance-amount">1240</span>
+            </h1>
+          </div>
+        </div>
+        <section class="my-4">
+          <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+            <div class="bg-purple-200 p-4">
+              <input
+                class="w-3/5 block mx-auto rounded px-2 py-1 my-2"
+                type="text"
+                name=""
+                placeholder="Deposit ammount"
+                id="deposit-input"
+              />
+              <button
+                id="deposit-btn"
+                class="bg-blue-400 text-white font-medium py-2 px-3 rounded block mx-auto my-4"
+              >
+                Deposit
+              </button>
+            </div>
+            <div class="bg-red-200 p-4">
+              <input
+                class="w-3/5 block mx-auto rounded px-2 py-1 my-2"
+                type="text"
+                name=""
+                placeholder="Withdraw ammount"
+                id="withdraw-input"
+              />
+              <button
+                id="withdraw-btn"
+                class="bg-blue-400 text-white font-medium py-2 px-3 rounded block mx-auto my-4"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- banking script-flie -->
+    <script src="./js/banking.js"></script>
+  </body>
+</html>
